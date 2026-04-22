@@ -47,5 +47,5 @@ jobs:
 
       - name: Reiniciar PM2 correctamente
         run: |
-          ssh -o StrictHostKeyChecking=no ubuntu@ec2-52-73-246-114.compute-1.amazonaws.com \
+          ssh -o StrictHostKeyChecking=no ubuntu@ec2-3-90-210-163.compute-1.amazonaws.com \
             "pm2 restart api || pm2 start /var/www/api_devops/server.js --name api"

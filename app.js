@@ -6,7 +6,7 @@ app.get("/", (req, res) => {
 })
 
 app.get("/clients", (req, res) => {
-    res.status(200).json({ message: "Ok", clients:{ c1 , c2 } });
+    res.status(200).json({ message: "Ok", clients: ["uno","dos"]  });
 })
 
 module.exports = app;
