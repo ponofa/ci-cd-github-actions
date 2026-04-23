@@ -14,4 +14,9 @@ describe("GET /", ()=> {
         expect(res.statusCode).toBe(404);        
     });
 
+    it("Total de registros administradores", async() => {
+        const res = await request(app).get("/administradores");
+        expect(res.body.total).toBe(5);        
+    });
+
 });

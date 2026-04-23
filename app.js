@@ -18,4 +18,36 @@ app.get("/city", (req, res) => {
     res.status(200).json({ message: "Ok", city: "Berlin"  });
 })
 
+app.get("/administradores", (req, res) => {
+    res.status(200).json({ message: "Ok", administradores: [
+        {
+            "nombre": "Juan",
+            "apellido": "Suarez",
+            "edad":25
+        },
+        {
+            "nombre": "Maria",
+            "apellido": "Quintana",
+            "edad":25
+        },
+        {
+            "nombre": "Alvaro",
+            "apellido": "Farias",
+            "edad":32
+        },
+        {
+            "nombre": "Anabel",
+            "apellido": "Duquez",
+            "edad":32
+        },
+        {
+            "nombre": "Delia",
+            "apellido": "Estefan",
+            "edad":34
+        }
+    ],
+    total: 5
+});
+})
+
 module.exports = app;
