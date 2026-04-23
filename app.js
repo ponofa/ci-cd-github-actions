@@ -14,4 +14,8 @@ app.get("/not_found", (req, res) => {
     res.status(404).json({ message: "Error not found" });
 })
 
+app.get("/city", (req, res) => {
+    res.status(200).json({ message: "Ok", city: "Berlin"  });
+})
+
 module.exports = app;
