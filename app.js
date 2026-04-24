@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 
+const x = 123;
 
 app.get("/", (req, res) => {
     res.status(200).json({ message: "API Funcionando" });
@@ -18,7 +19,11 @@ app.get("/city", (req, res) => {
     res.status(200).json({ message: "Ok", city: "Berlin"  });
 })
 
-app.get("/administrador", (req, res) => {
+app.get("/city", (req, res) => {
+    res.status(200).json(foo);
+})
+
+app.get("/administradores", (req, res) => {
     res.status(200).json({ message: "Ok", administradores: [
         {
             "nombre": "Juan",
