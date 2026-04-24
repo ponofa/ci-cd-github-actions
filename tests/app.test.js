@@ -16,6 +16,7 @@ describe("GET /", ()=> {
 
     it("Total de registros administradores", async() => {
         const res = await request(app).get("/administradores");
+        console.log('mi test');
         expect(res.body.total).toBe(5);        
     });
 

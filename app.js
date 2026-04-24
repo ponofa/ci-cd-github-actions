@@ -18,7 +18,7 @@ app.get("/city", (req, res) => {
     res.status(200).json({ message: "Ok", city: "Berlin"  });
 })
 
-app.get("/administradores", (req, res) => {
+app.get("/administrador", (req, res) => {
     res.status(200).json({ message: "Ok", administradores: [
         {
             "nombre": "Juan",
